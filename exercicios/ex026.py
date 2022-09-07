@@ -1,0 +1,6 @@
+x = input("Digite uma frase: ").strip()
+x = x.lower()
+xa = x.count("a")
+xaa = x.find("a")
+xaaa = x.rfind("a")
+print("A letra 'a' aparece {} vezes, na primeira vez é na posição {}, e na última vez é na posição {}.".format(xa,xaa+1,xaaa+1))

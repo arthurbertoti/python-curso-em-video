@@ -1,0 +1,21 @@
+print("Escolha um investimento (sob as regras do contrato que será assinado) dentre as seguintes opções:")
+print("Mêses de investimento{}Porcentagem no final do investimento".format("-"*1))
+print("1{}2%".format("-"*21))
+print("2{}4%".format("-"*21))
+print("3{}6%".format("-"*21))
+print("4{}8%".format("-"*21))
+print("5{}10%".format("-"*21))
+print("6{}12%".format("-"*21))
+print("7{}12,5%".format("-"*21))
+print("8{}13%".format("-"*21))
+print("9{}13,5%".format("-"*21))
+print("10{}14%".format("-"*20))
+print("11{}14,5%".format("-"*20))
+print("12{}15%".format("-"*20))
+porcentagem = float(input("Digite quantos meses você irá investir da seguinte forma:\n1 mês = 0.02\n2 meses = 0.04\n3 meses = 0.06\n4 meses = 0.08\n5 meses = 0.10\n6 meses = 0.12\n7 meses = 0.125\n8 meses = 0.13\n9 meses = 0.135\n10 meses = 0.14\n11 meses = 0.145\n12 meses = 0.15\nSua resposta: "))
+meses = int(input("Digite os mês correspondente com a resposta anterior (apenas o número EX:12,6,3): "))
+deposito = float(input("Agora digite qual será seu depósito mensal (EX: R$30,00 = 30): "))
+depositotodo = deposito * meses
+receber = (deposito + (deposito * porcentagem)) * meses
+lucro = receber - depositotodo
+print("De acordo com os dados fornecidos, ao todo você irá depositar R${:.2f} no final de {} meses, e vai receber R${:.2f}, tendo um lucro de R${:.2f}.".format(depositotodo,meses,receber,lucro))
