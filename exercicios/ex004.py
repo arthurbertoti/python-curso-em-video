@@ -1,6 +1,0 @@
-x=input("Digite algo:")
-print("O tipo primitivo desse valor é {}".format(type(x)),)
-print("isto é um número?",x.isnumeric())
-print("isto é uma palavra?",x.isalpha())
-print("isto está em letras maiúsculas?",x.isupper())
-print("Isto está em letras minúsculas?",x.islower())
